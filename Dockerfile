@@ -12,4 +12,6 @@ RUN apk --no-cache add \
         g++ \
         make
 
+ENV TZ UTC
+
 CMD ["k8s-snapshots"]
