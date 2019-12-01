@@ -14,4 +14,7 @@ RUN apk --no-cache add \
 
 ENV TZ UTC
 
+# nobody:nobody
+USER 65534:65534
+
 CMD ["k8s-snapshots"]
